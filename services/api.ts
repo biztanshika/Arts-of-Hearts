@@ -1,6 +1,6 @@
 import { ApiResponse } from '../types/api';
 
-const API_URL = 'https://backend.staging.artstoheartsproject.com/api/users/public/events/101-art-book-landscape-edition-new/selected-artists/?page=1';
+const API_URL = '/api/events';
 
 export async function fetchEventData(): Promise<ApiResponse> {
   const response = await fetch(API_URL);
